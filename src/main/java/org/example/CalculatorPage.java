@@ -41,10 +41,11 @@ public class CalculatorPage{
     WebElement gpuTypeDropBox;
     @FindBy(xpath="//md-select[@placeholder='Number of GPUs']")
     WebElement numberOfGpusDropBox;
-    @FindBy(xpath ="//md-option[@id='select_option_496']")
+    @FindBy(xpath ="//md-option[@id='select_option_497']")
     WebElement numberOfGpus;
     @FindBy(xpath="//md-option[@value='NVIDIA_TESLA_V100']")
     WebElement gpusType;
+
     @FindBy(xpath="//md-select[@placeholder='Local SSD']")
     WebElement localSsdDropBox;
     @FindBy(xpath="//div[normalize-space()='2x375 GB']")
@@ -56,7 +57,7 @@ public class CalculatorPage{
     WebElement dataCenterLocation;
     @FindBy(xpath="//md-select[@placeholder='Committed usage']")
     WebElement commitedUageDropBox;
-    @FindBy(xpath="//md-option[@id='select_option_133']")
+    @FindBy(xpath="//md-option[@id='select_option_134']")
     WebElement commitedUsageOneYear;
     @FindBy(xpath="//form[@name='ComputeEngineForm']//button[@type='button'][normalize-space()='Add to Estimate']")
     WebElement addToEstimateButton;

@@ -18,10 +18,13 @@ public class CalculatorPageTest extends baseTest{
         calculatorPage1.selectSeries();
         calculatorPage1.selectMachineType();
         calculatorPage1.AddGpusCheckBox();
+        Thread.sleep(1000);
         calculatorPage1.selectTypeOfGpus();
         calculatorPage1.selectNumberOfGpus();
+        Thread.sleep(1000);
         calculatorPage1.selectLocalSsd();
         calculatorPage1.selectDataCenterLocation();
+        Thread.sleep(1000);
         calculatorPage1.selectCommittedUsage();
         calculatorPage1.pushAddToEstimate();
         String vmClass=calculatorPage1.getVmClassData().getText();
