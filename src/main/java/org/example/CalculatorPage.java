@@ -5,6 +5,8 @@ import java.lang.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.JavascriptExecutor;
+
 
 public class CalculatorPage{
     WebDriver driver;
@@ -49,7 +51,8 @@ public class CalculatorPage{
     WebElement localSsdModel;
     @FindBy(xpath="//md-select[@placeholder='Datacenter location']")
     WebElement dataCenterLocationDropBox;
-    @FindBy(xpath="//md-option[@id='select_option_252']//div[@class='md-text ng-binding'][normalize-space()='Frankfurt (europe-west3)']")
+
+    @FindBy(xpath="//md-option[@id='select_option_253']//div[@class='md-text ng-binding'][normalize-space()='Frankfurt (europe-west3)']")
     WebElement dataCenterLocation;
     @FindBy(xpath="//md-select[@placeholder='Committed usage']")
     WebElement commitedUageDropBox;
@@ -129,6 +132,9 @@ public class CalculatorPage{
         localSsdModel.click();
     }
     public void selectDataCenterLocation() throws InterruptedException {
+
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight)");
         dataCenterLocationDropBox.click();
         Thread.sleep(1000);
         dataCenterLocation.click();
