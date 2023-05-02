@@ -30,7 +30,7 @@ public class CalculatorPageTest extends baseTest{
 
         String vmClass=calculatorPage1.getVmClassData().getText();
         System.out.println(vmClass);
-        Assert.assertEquals(vmClass,"Provisioning model: Regular");
+        Assert.assertEquals(vmClass,"Provisioning model: NotRegular");
 
         String instance = calculatorPage1.getInstanceType().getText();
         System.out.println(instance);
@@ -55,6 +55,8 @@ public class CalculatorPageTest extends baseTest{
         System.out.println(cost);
         Assert.assertEquals(cost, "Total Estimated Cost: USD 1,081.20 per 1 month");
     }
+
+
 
 
 }
