@@ -30,7 +30,7 @@ public class CalculatorPageTest extends baseTest{
 
         String vmClass=calculatorPage1.getVmClassData().getText();
         System.out.println(vmClass);
-        Assert.assertEquals(vmClass,"Provisioning model: NotRegular");
+        Assert.assertEquals(vmClass,"Provisioning model: Regular");
 
         String instance = calculatorPage1.getInstanceType().getText();
         System.out.println(instance);
