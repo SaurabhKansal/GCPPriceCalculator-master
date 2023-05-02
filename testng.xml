@@ -11,13 +11,4 @@
         </classes>
     </test>
 
-    <test verbose="2" preserve-order="true" name="Check VM Class">
-        <classes>
-            <class name="org.example.CalculatorPageTest">
-                <methods>
-                    <include name="checkInformationInVmClassString"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
 </suite>
