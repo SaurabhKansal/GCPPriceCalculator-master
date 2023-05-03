@@ -12,7 +12,7 @@ target/
 *.iml
 *.ipr
 
-.idea/testng.xml
+
 
 ### Eclipse ###
 .apt_generated
